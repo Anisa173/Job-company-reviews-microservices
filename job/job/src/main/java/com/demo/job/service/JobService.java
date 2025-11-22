@@ -1,15 +1,15 @@
 package com.demo.job.service;
 
-import com.demo.job.dto.JobwithCompanyDTO;
+import com.demo.job.dto.JobDTO;
 import com.demo.job.entity.Job;
 
 import java.util.List;
 
 public interface JobService {
-    List<JobwithCompanyDTO> findAll();
+    List<JobDTO> findAll();
     void createJob(Job job);
 
-    Job getJobById(Long id);
+    JobDTO getJobById(Long id);
 
     boolean deleteJobById(Long id);
 
